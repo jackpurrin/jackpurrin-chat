@@ -1,7 +1,7 @@
 // Global variables
 let userName = '';
 let userColor = '';
-const audio = new Audio('notif.mp3');
+const audio = new Audio('/assets/audio/notif.mp3');
 
 // DOM elements
 const DOM = {
