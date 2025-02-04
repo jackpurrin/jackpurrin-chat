@@ -1,0 +1,191 @@
+:root {
+  /* Color Variables */
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --header-color: #ffffff;
+  --button-color: #6200ea;
+  --button-hover-color: #3700b3;
+  --input-background: #ffffff;
+  --input-text-color: #333;
+  --message-background: #ffffff;
+}
+
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --header-color: #1f1f1f;
+  --button-color: #bb86fc;
+  --button-hover-color: #3700b3;
+  --input-background: #1f1f1f;
+  --input-text-color: #e0e0e0;
+  --message-background: #1f1f1f;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: var(--header-color);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle {
+  margin-top: 10px;
+}
+
+.theme-toggle button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.theme-toggle button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.chat-section {
+  display: flex;
+  margin-top: 20px;
+}
+
+.members-panel {
+  width: 200px;
+  background-color: var(--header-color);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.members-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.chat-container {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: var(--message-background);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.member {
+  font-weight: bold;
+}
+
+.message-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.message-form__input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: var(--input-background);
+  color: var(--input-text-color);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.send-button {
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin-bottom: 15px;
+}
+
+.modal-content form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--input-background);
+  color: var(--input-text-color);
+}
+
+.modal-submit-button {
+  background-color: var(--button-color);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.modal-submit-button:hover {
+  background-color: var(--button-hover-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  transition: color 0.3s ease;
+}
