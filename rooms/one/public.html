@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time Chat Room</title>
+  <link rel="stylesheet" href="/css/public.css">
+  <link rel="icon" href="/assets/images/beaker.png">
+</head>
+<body class="dark-mode">
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Real-time Chat Room</h1>
+      <a href="https://github.com/JollyJolli">Thanks to Jolly for revamping my chat room!</a>
+      <div class="theme-toggle">
+        <button id="light-mode-btn" aria-label="Switch to light mode">☀️ Light Mode</button>
+        <button id="dark-mode-btn" aria-label="Switch to dark mode">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <!-- Chat Section -->
+    <section class="chat-section">
+      <aside class="members-panel">
+        <h3 class="members-count">0 users in the room:</h3>
+        <div class="members-list"></div>
+      </aside>
+
+      <div class="chat-container">
+        <div class="messages" id="messages"></div>
+        <form class="message-form" autocomplete="off">
+          <input id="message-input" class="message-form__input" type="text" placeholder="Type your message..." aria-label="Chat message" required />
+          <button type="submit" class="send-button" aria-label="Send message">Send</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal for Name and Color Selection -->
+  <div id="nameColorModal" class="modal">
+    <div class="modal-content">
+      <h2>Enter Your Name and Choose a Color</h2>
+      <form id="nameColorForm">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required placeholder="Enter your name">
+        
+        <label for="usercolor">Choose a color:</label>
+        <input type="color" id="usercolor" name="usercolor" value="#ff0000">
+        
+        <button type="submit" class="modal-submit-button">Join Chat</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Include ScaleDrone SDK -->
+  <script src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+  <script src="/js/one-public.js"></script>
+</body>
+</html>

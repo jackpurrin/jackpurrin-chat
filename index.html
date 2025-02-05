@@ -18,15 +18,44 @@
                 </div>
             </div>
             <div class="window-body has-space">
-                <a href="rooms/one">go to chat room 1</a>
-                <br />
-                <a href="rooms/two">go to chat room 2</a>
-                <br />
-                <a href="rooms/three">go to chat room 3</a>
-                <br />
-                <a href="rooms/four">go to chat room 4</a>
-                <br />
-                <a href="rooms/five">go to chat room 5</a>
+                <section class="tabs" style="max-width: 500px;">
+                    <menu role="tablist" aria-label="Sample Tabs">
+                        <button role="tab" aria-controls="home" aria-selected="true">home</button>
+                        <button role="tab" aria-controls="chat-room-1" aria-selected="false">chat room 1</button>
+                        <button role="tab" aria-controls="chat-room-2" aria-selected="false">chat room 2</button>
+                        <button role="tab" aria-controls="chat-room-3" aria-selected="false">chat room 3</button>
+                        <button role="tab" aria-controls="chat-room-4" aria-selected="flase">chat room 4</button>
+                        <button role="tab" aria-controls="chat-room-5" aria-selected="flase">chat room 5</button>
+                    </menu>
+                    <article role="tabpanel" id="home">
+                        <p>lorem ipsum...</p>
+                    </article>
+                    <article role="tabpanel" id="chat-room-1" hidden="">
+                        <a href="rooms/one/public">public room</a>
+                        <a href="rooms/one/anon">anonomyus room</a>
+                        <a href="rooms/one/rtc">rtc room</a>
+                    </article>
+                    <article role="tabpanel" id="chat-room-2" hidden="">
+                        <a href="rooms/two/public">public room</a>
+                        <a href="rooms/two/anon">anonomyus room</a>
+                        <a href="rooms/two/rtc">rtc room</a>
+                    </article>
+                    <article role="tabpanel" id="chat-room-3" hidden="">
+                        <a href="rooms/three/public">public room</a>
+                        <a href="rooms/three/anon">anonomyus room</a>
+                        <a href="rooms/three/rtc">rtc room</a>
+                    </article>
+                    <article role="tabpanel" id="chat-room-4" hidden="">
+                        <a href="rooms/four/public">public room</a>
+                        <a href="rooms/four/anon">anonomyus room</a>
+                        <a href="rooms/four/rtc">rtc room</a>
+                    </article>
+                    <article role="tabpanel" id="chat-room-5" hidden="">
+                        <a href="rooms/five/public">public room</a>
+                        <a href="rooms/five/anon">anonomyus room</a>
+                        <a href="rooms/five/rtc">rtc room</a>
+                    </article>
+                </section>
             </div>
         </div>
     </body>
