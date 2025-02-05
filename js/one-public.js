@@ -38,7 +38,7 @@ DOM.nameColorForm.addEventListener('submit', (e) => {
 
 // Connect to Scaledrone
 function connectToScaledrone() {
-  const CLIENT_ID = 'vfafhYS31psXR9NZ'; // Replace with your own client ID
+  const CLIENT_ID = 'DQJ4F6vGSCS3MkvO'; // Replace with your own client ID
   const drone = new ScaleDrone(CLIENT_ID, {
     data: {
       name: userName,
