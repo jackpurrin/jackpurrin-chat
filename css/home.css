@@ -6,13 +6,6 @@ body {
   background-size: cover;
 }
 
-a {
-  font-size: 1.3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .window {
   max-width: 30%;
   margin: 0;
@@ -22,3 +15,19 @@ a {
   left: 50%;
   transform: translateX(-50%);
 }
+
+a {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
